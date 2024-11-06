@@ -1,5 +1,10 @@
 # storyTeller
 This interactive story application allows users to experience branching narratives, where they make choices to progress through different story paths. The story unfolds based on user selections, making each journey unique depending on the choices made.
+![Screenshot (148)](https://github.com/user-attachments/assets/4baf7453-9f80-4bb0-a3c0-48b7095fca62)
+![Screenshot (146)](https://github.com/user-attachments/assets/7ee3f8fa-b17e-469f-87d1-9f3708e433d2)
+![Screenshot (147)](https://github.com/user-attachments/assets/e7567c2c-080d-43db-bfb9-77d4d19dc42b)
+
+
 # 1. Story Content Structure
   - Each story comprises nodes or scenes with specific content, such as text, images, and options for further choices.
   - The story begins at a “Start” node, and each node may have multiple choices leading to other nodes, creating a branching path.
