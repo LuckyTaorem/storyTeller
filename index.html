@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Story</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="parent_container">
+        <p class="hidden" id="refresh">Refresh the page to play again or try new story!</p>
+        <div id="button">
+            <button id="start-narration"><i class="fa fa-play" aria-hidden="true"></i></button>
+            <button id="stop-narration" disabled><i class="fa fa-stop" aria-hidden="true"></i></button>
+            <button id="pause-narration" disabled><i class="fa fa-pause" aria-hidden="true"></i></button>
+            <select id="mySelect">
+                <option value="" disabled selected>Select a story</option>
+                <option value="timeTraveler">Time Traveler (Incomplete)</option>
+                <option value="imagination">Imagination (Completed)</option>
+            </select>
+        </div>
+        
+        <div id="story-container" class="container">
+            <img 
+                id="story-image" 
+                src="" 
+                alt="Story Image" 
+                style="display:none; width: 40%; min-width: 200px; float: left; padding-right: 30px; padding-bottom: 6px;" 
+            />
+            <p id="story-text">Please select a story to begin...</p> <!-- Placeholder text -->
+            <div id="choices"></div>
+            <table id="shortcuts">
+                <thead>
+                    <tr>
+                        <th colspan="2">Keyboard Shortcuts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ESC:</td>
+                        <td>Restart</td>
+                    </tr>
+                    <tr>
+                        <td>Space:</td>
+                        <td>Play/Pause</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl + S:</td>
+                        <td>Stop</td>
+                    </tr>
+                    <tr>
+                        <td>Numpad:</td>
+                        <td>Choices</td>
+                    </tr>
+                    <tr>
+                        <td>Backspace:</td>
+                        <td>Back</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+    </div>
+
+    <script>
+        let story = null;  // Global variable to hold the story data
+        let loadedScript = null;  // Track the dynamically loaded script
+        
+        document.getElementById('mySelect').addEventListener('change', function() {
+            const selectedValue = this.value;
+
+            // Reset story content before loading the new one
+            document.getElementById('story-text').textContent = "Loading story..."; 
+            document.getElementById('story-image').style.display = "none"; 
+
+            // Remove the previously loaded script if any
+            if (loadedScript) {
+                loadedScript.remove();
+            }
+
+            // Create a new script element
+            const script = document.createElement('script');
+            script.id = 'dynamicScript';  
+            
+            // Load the corresponding JavaScript file based on the selection
+            if (selectedValue === 'timeTraveler') {
+                script.src = 'js/timeTraveler.js';
+            } else if (selectedValue === 'imagination') {
+                script.src = 'js/imagination.js';
+            }
+
+            // Append the new script to the document head
+            document.head.appendChild(script);
+            loadedScript = script;
+
+            // Once the new story script is loaded, load and execute `scripts.js`
+            script.onload = function() {
+                // Ensure `scripts.js` is loaded after `story` is defined
+                const script2 = document.createElement('script');
+                script2.src = 'js/scripts.js';
+                document.head.appendChild(script2);
+
+                // Initialize the story once both scripts are loaded
+                script2.onload = function() {
+                    resetNarration();
+                    showStory("Start");
+                    document.getElementById('mySelect').classList.add('hidden');
+                    document.getElementById('shortcuts').classList.add('hidden');
+                    document.getElementById('refresh').classList.remove('hidden');
+                };
+            };
+        });
+    </script>
+</body>
+</html>

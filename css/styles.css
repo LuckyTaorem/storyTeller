@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    height: max-content;
+    min-height: 100%;
+    overflow-y: scroll;
+    /* overflow-x: hidden; */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#story-container {
+    /* border:1px solid black; */
+    /* overflow-y: scroll; */
+    background-color: #ffffff20;
+    backdrop-filter: blur(07px);
+    /* color: white; */
+    text-align: left;
+    padding: 30px;
+    margin: 5px 20px;
+    border-radius: 10px;
+    /* width: 100%; */
+    /* height: 600px; */
+}
+#button{
+    padding-bottom: 10px;
+}
+#button button{
+    width: 50px;
+}
+.choice_btn{
+    background-color: white;
+    border:1px solid black;
+}
+#back_btn{
+    background-color: blue;
+    color: white;
+    border: none;
+}
+#choices button {
+    display: block;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#choices button:hover {
+    background-color: #333;
+    color: white;
+}
+.parent_container{
+    display: flex;
+    flex-direction: column;
+}
+.fade-in {
+    animation: fadeInEffect 1s ease-in-out;
+}
+.slide-right{
+    animation: slideRight 1s ease-in-out;
+}
+
+@keyframes fadeInEffect {
+    from {
+        opacity: 0;
+        transform: translateY(10px); /* Small upward motion */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translatex(-30px); /* Small upward motion */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.hidden{
+    display: none;
+}
+.show{
+    display: block;
+}
+table{
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+table td{
+    border-top: 1px solid black;
+    padding: 0 20px;
+}
+#shortcuts tbody td:first-child {
+    text-align: right;
+    padding-right: 10px; /* Adds some space between the columns */
+}
+#shortcuts tbody td:nth-child(2) {
+    text-align: left;
+    padding-right: 10px; /* Adds some space between the columns */
+}
