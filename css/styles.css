@@ -125,3 +125,6 @@ table td{
     text-align: left;
     padding-right: 10px; /* Adds some space between the columns */
 }
+#voiceSelect{
+    width: max-content;
+}

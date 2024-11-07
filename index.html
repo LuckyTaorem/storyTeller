@@ -10,15 +10,24 @@
 <body>
     <div class="parent_container">
         <p class="hidden" id="refresh">Refresh the page to play again or try new story!</p>
+
         <div id="button">
+            <label id="labelVoiceSelect" for="voiceSelect">Narrator Voice:</label>
+            <select id="voiceSelect">
+                <option value="">Select the story first.</option>
+            </select>
+            <br>
+            <div id="narrator_btn">
             <button id="start-narration"><i class="fa fa-play" aria-hidden="true"></i></button>
             <button id="stop-narration" disabled><i class="fa fa-stop" aria-hidden="true"></i></button>
             <button id="pause-narration" disabled><i class="fa fa-pause" aria-hidden="true"></i></button>
+        </div>
             <select id="mySelect">
                 <option value="" disabled selected>Select a story</option>
                 <option value="timeTraveler">Time Traveler (Incomplete)</option>
                 <option value="imagination">Imagination (Completed)</option>
             </select>
+            
         </div>
         
         <div id="story-container" class="container">
@@ -44,6 +53,10 @@
                     <tr>
                         <td>Space:</td>
                         <td>Play/Pause</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl + R:</td>
+                        <td>Refresh Page</td>
                     </tr>
                     <tr>
                         <td>Ctrl + S:</td>
@@ -82,34 +95,33 @@
             // Create a new script element
             const script = document.createElement('script');
             script.id = 'dynamicScript';  
+            script.src = selectedValue === 'timeTraveler' ? 'js/timeTraveler.js' : 'js/imagination.js';
             
-            // Load the corresponding JavaScript file based on the selection
-            if (selectedValue === 'timeTraveler') {
-                script.src = 'js/timeTraveler.js';
-            } else if (selectedValue === 'imagination') {
-                script.src = 'js/imagination.js';
-            }
-
             // Append the new script to the document head
             document.head.appendChild(script);
             loadedScript = script;
 
             // Once the new story script is loaded, load and execute `scripts.js`
             script.onload = function() {
-                // Ensure `scripts.js` is loaded after `story` is defined
-                const script2 = document.createElement('script');
-                script2.src = 'js/scripts.js';
-                document.head.appendChild(script2);
+            const mainScript = document.createElement('script');
+            mainScript.src = 'js/scripts.js';
+            document.head.appendChild(mainScript);
 
-                // Initialize the story once both scripts are loaded
-                script2.onload = function() {
-                    resetNarration();
-                    showStory("Start");
-                    document.getElementById('mySelect').classList.add('hidden');
-                    document.getElementById('shortcuts').classList.add('hidden');
-                    document.getElementById('refresh').classList.remove('hidden');
-                };
+            // Initialize the story after both scripts load
+            mainScript.onload = function() {
+                document.getElementById('mySelect').classList.add('hidden');
+                document.getElementById('shortcuts').classList.add('hidden');
+                document.getElementById('refresh').classList.remove('hidden');
+                // resetNarration();
+                showStory("Start");
             };
+            mainScript.onerror = function() {
+                alert("Error loading scripts.js. Please refresh the page.");
+            };
+            };
+            script.onerror = function() {
+            alert("Error loading the selected story. Please refresh the page and try again.");
+        };
         });
     </script>
 </body>
