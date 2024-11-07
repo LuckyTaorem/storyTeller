@@ -1,3 +1,6 @@
+# Newly Added
+  - Ctri + R: To refresh the page
+  - User can now select the Narrator Voice
 # storyTeller
 This interactive story application allows users to experience branching narratives, where they make choices to progress through different story paths. The story unfolds based on user selections, making each journey unique depending on the choices made.
 ![Screenshot (148)](https://github.com/user-attachments/assets/4baf7453-9f80-4bb0-a3c0-48b7095fca62)
