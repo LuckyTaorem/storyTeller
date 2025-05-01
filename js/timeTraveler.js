@@ -10,7 +10,7 @@ story = {
             text: "Swallow your nervousness and step into the machine.",
             next: "a"
         }],
-        image: ["../images/Start.jpg"]
+        image: ["images/Start.jpg"]
     },
     a: {
         text: "You step into the machine, and the overseer hands you a camera.\n\n" +
@@ -29,7 +29,7 @@ story = {
                 next: "b2"
             }
         ],
-        image: ["../images/a.jpg"]
+        image: ["images/a.jpg"]
     },
     b1: {
         text: "You carefully walk through the forest, trying not to make any sound. The lab coat you are wearing is gleaming brightly, so you take it off, and put it over your shoulder. Your clothes are not of this time, so it is important that you are not spotted. Eventually, after two or three minutes of walking, you come to the edge of the forest, and find that you have been on a hill. In amazement, you look down upon a medieval village. The thatched roofs and busy people are only a short walk away.\n\n" +
@@ -44,7 +44,7 @@ story = {
                 next: "c2"
             }
         ],
-        image: ["../images/b1.jpg"]
+        image: ["images/b1.jpg"]
     },
     b2: {
         text: "After a few minutes of waiting, a group of people dressed in medieval clothes appears. They stare at you in terror.\n\n" +
@@ -172,7 +172,7 @@ story = {
                 next: "e5"
             }
         ],
-        image: ["../images/d3.jpg"]
+        image: ["images/d3.jpg"]
     },
     d4: {
         text: "You stride on, ignoring the man entirely.\n\n" +
@@ -208,7 +208,7 @@ story = {
                 text: "Start Over.",
                 next: "Start"
             }],
-        image: ["../images/d5.jpg"]
+        image: ["images/d5.jpg"]
     },
     d6: {
         text: "You make a run for it, dodging through the trees and leaping over tree roots. Eventually, after some minutes of running, you lose them, and can head back to your machine. Your breath comes in ragged gasps, but a surge of relief washes over you as the sight of the time machine glimmers through the foliage. You waste no time climbing inside and securing the door. The buttons and dials of the machine are a comforting sight as you prepare for your return journey.\n\n",
@@ -274,7 +274,7 @@ story = {
                 text: "Start Over.",
                 next: "Start"
             }],
-        image: ["../images/f1.jpg"]
+        image: ["images/f1.jpg"]
     },
     f2: {
         text: "You sit and watch the villagers in the forest poking at the time machine with branches and tossing rocks at it. You decide it's time to go, this probably can go on all day and you want to get back to the lab.\n\n" +
@@ -303,7 +303,7 @@ story = {
             "You take a picture, and the flash lights up the man's face. He screams.\n\n" +
             "\"That was only a warning shot,\" you say. \"Now get out of here!\"\n\n" +
             "The man stands and runs away. People in the village are staring at you in awe now, and some are looking out of their windows in fear. You walk straight through the village and are confident that you can take a picture with no problems now.",
-        image: ["../images/f3.jpg"],
+        image: ["images/f3.jpg"],
         choices: [{
                 text: "The tavern?",
                 next: "g3"
@@ -338,7 +338,7 @@ story = {
                 text: "Start Over.",
                 next: "Start"
             }],
-        image: ["../images/g1.gif"]
+        image: ["images/g1.gif"]
     },
     g2: {
         text: "You decide that the Overseer may not be too satisfied with the pictures you had taken from the Medieval era so you set the time machine for 1941, the year of WWII. If you get pictures here, he's gotta be happy.\n\n" +
@@ -346,7 +346,7 @@ story = {
             "\"Get down, Get down,\" one Marine yells. Sand flies up from the gunfire as Marines fall, crying out in pain from being shot.\n\n" +
             "\"Medic! I need a Medic, Johnson's been shot!\"\n\n" +
             "You remember the first aid kit in the Machine and the first aid class when you were a summer lifeguard, but you may just want to grab some photos and get out of here—this is dangerous.\n\n",
-        image: ["../images/g2.jpg"],
+        image: ["images/g2.jpg"],
         choices: [{
                 text: "Grab the first aid kit",
                 next: "h1"
@@ -370,7 +370,7 @@ story = {
             "\"What is this?\" he demands.\n\n" +
             "\"My liege, we found him in the village causing trouble with this strange device,\" one of the knights says, pointing at your camera. The Lord looks at it in interest.\n\n" +
             "\"What is your business here, stranger?\" he asks you.",
-        image: ["../images/g3.jpg"],
+        image: ["images/g3.jpg"],
         choices: [{
                 text: "I apologise, my liege. I came only looking for shelter and food.",
                 next: "h3"
@@ -388,7 +388,7 @@ story = {
             "Bullets are flying and bombs are crashing all around as you work to help Johnson. You apply pressure to his wound and raise his legs. He looks a little calmer and less in pain. You lift him onto your shoulders and run him over to a big chunk of metal, setting him down where he will be safe for now. Another Marine rushes over, holding two rifles. You snap a quick photo as he runs toward you.\n\n" +
             "\"Can you shoot a rifle, Hero?\" he asks you.\n\n" +
             "You probably got a good couple of photos, but maybe staying safe with Johnson behind the barrier is a smart move, or perhaps you can become part of history and help these Marines take this beach.\n\n",
-        image: ["../images/h1.jpg"],
+        image: ["images/h1.jpg"],
         choices: [{
                 text: "Take the beach!",
                 next: "i1"
@@ -404,7 +404,7 @@ story = {
             "You begin to start taking photos as bullets are piercing the beach all over the place and bombs explode all around you.\n\n" +
             "On Iwo Jima, the few hundred Japanese troops remaining on the island mount a final suicide attack. They are being wiped out one by one by elements of the 5th Marine Division, which have been assigned the task of reducing the last pockets of resistance. (true fact)\n\n" +
             "A Marine runs up to you and dives as an explosion nearly takes him out. He crouches next to you. \"I gotta get up to that hill with the others. If you charge the hill with me, we should make it, newsman.\" He gestures to hand you a spare rifle from a fallen Marine, thinking you're from the news taking pictures.",
-        image: ["../images/h2.jpg"],
+        image: ["images/h2.jpg"],
         choices: [{
                 text: "Take the rifle and charge the hill",
                 next: "i3"
@@ -422,7 +422,7 @@ story = {
             "\"You will stay there for a few days, to teach you some manners!\" one of the men says to you. You slump on the seat in despair. How will you ever get back to your time machine now?\n\n" +
             "You spend some hours waiting, and night comes. You are trying to sleep when there is a sudden commotion outside. There is a stifled yell, and then the sound of a body hitting the floor. The solid oak door swings open and there is a woman standing there, sword in hand. You stand up and she points her sword at you.\n\n" +
             "\"Where are you really from?\" she demands.",
-        image: ["../images/h3.jpg"],
+        image: ["images/h3.jpg"],
         choices: [{
                 text: "\"You would not believe me if I told you.\"",
                 next: "i5"
@@ -453,7 +453,7 @@ story = {
             "\"That's pretty good shootin', Hero. Now let's take this beach and charge that hill,\" the Marine shouts.\n\n" +
             "You both rush up from the shore, shooting your way to the top of the beach and diving down beside a row of Marines near the base. Automatic gunfire from the Japanese pierces the sand as bombs and grenades explode, sending waves of sand into the air. You feel a mix of adrenaline and fear, knowing from history that they will eventually take this beach, but at a tremendous cost of lives. You can only hope the Time Machine remains unharmed.\n\n" +
             "Hours seem to pass as you continue shooting, ducking, and holding your breath. Finally, the command is given, and the Marines, including yourself, decide to push forward, jumping up from the sand and charging into the gunfire.\n\n",
-        image: ["../images/i1.jpg"],
+        image: ["images/i1.jpg"],
         choices: [{
                 text: "Turn and run for the machine; this is too much.",
                 next: "j1"
@@ -475,7 +475,7 @@ story = {
                 text: "Start Over.",
                 next: "Start"
             }],
-        image: ["../images/i2.jpg"]
+        image: ["images/i2.jpg"]
     },
     i3: {
         text: "You grab the rifle and charge the hill. Shots are fired as you charge heroically up the hill, taking out soldiers as you go. Then you suddenly encounter a heroic explosion. As you turn around, you see the machine has been blown up from a rocket. You realize you are now stuck in the 1940s.\n\n" +
@@ -486,14 +486,14 @@ story = {
                 text: "Start Over.",
                 next: "Start"
             }],
-        image: ["../images/i3.jpg"]
+        image: ["images/i3.jpg"]
     },
     i4: {
         text: "\"No, stay with me. You will be safer here behind this metal than you would charging up that hill.\"\n\n" +
             "\"I don't know whose side you're on, kid, or even who the heck you are for that matter, but I have a war to fight.\" He charges up the hill as bullets zip and ding against the metal barrier you crawled up behind.\n\n" +
             "You look around and take a couple of photos as Marines charge past you. One Marine dives down to where you are hiding and begins shooting. He gets up and bumps you as he takes off running toward the hill. Just as he does, you drop your camera, and another Marine runs past, stepping on it and crushing all your photos from the Medieval Era and WWII.\n\n" +
             "Maybe if you come back with an item from this time, the Overseer will be happy.",
-        image: ["../images/i4.jpg"],
+        image: ["images/i4.jpg"],
         choices: [{
                 text: "Grab a rifle",
                 next: "j3"
@@ -537,14 +537,14 @@ story = {
                 text: "Start Over.",
                 next: "Start"
             }],
-        image: ["../images/j1.jpg"]
+        image: ["images/j1.jpg"]
     },
     j2: {
         text: "You decide to charge forward. You're no coward, and you want to make your mark in WWII history. Alongside several other Marines, you leap from the sands and press forward through the chaos. You grab a couple of snapshots while running until a bullet whizzes by, barely missing you. The shock knocks you to the ground, but you rise again, determined.\n\n" +
             "Your camera slips from your grasp, but there's no time to retrieve it. You and the Marines push on and finally take the beach, capturing several Japanese soldiers. A wave of exhaustion and triumph washes over you as you spot a group of Marines standing up a flag. Without hesitation, you rush over to help them.\n\n" +
             "As the flag stands tall, a Marine approaches with your camera in hand. 'Hope you don't mind, Hero, but I took a picture of you and the guys setting up the flag,' he says with a grin.\n\n" +
             "You glance at the digital screen and can hardly believe your eyes. The image mirrors the famous photograph you've seen in history books, with you as one of the figures immortalized in it. The Overseer will be most pleased with this.",
-        image: ["../images/j2.jpg"],
+        image: ["images/j2.jpg"],
         choices: [{
             text: "Head back to the Lab",
             next: "k1"
@@ -558,7 +558,7 @@ story = {
                 text: "Start Over.",
                 next: "Start"
             }],
-        image: ["../images/j3.jpg"]
+        image: ["images/j3.jpg"]
     },
     j4: {
         text: "You see the unfortunate lifeless body of a fallen Marine. You crawl over to him, first shaking him to see if there is a possibility you could help save him, but his life has been taken. You remove his helmet and put it on your own head. Bullets whiz by, zinging across your shoulder and kicking up sand around where you kneel.\n\n" +
@@ -598,7 +598,7 @@ story = {
             "'David Johnson,' you say, frowning as the seriousness of the situation sinks in. 'He thanked me for helping him. Is something wrong?'\n\n" +
             "The Overseer's face falls as he reads the information on the screen. 'Yes, something is very wrong. You’ve affected the Space-Time Continuum. Johnson was supposed to have died that day. Now I have to check what has changed since he survived.'\n\n" +
             "The screen fills with a timeline showing Johnson’s life and the significant impacts his survival has had on history. Your heart sinks as you see the consequences unfold.",
-        image: ["../images/l1.jpg"],
+        image: ["images/l1.jpg"],
         choices: [{
             text: "The screen pops up a history of Johnson's life, showing what has happened because of his survival",
             next: "l1"
@@ -621,7 +621,7 @@ story = {
                 next: "l3"
             }
         ],
-        image: ["../images/k2.jpg"]
+        image: ["images/k2.jpg"]
     },
     k3: {
         text: "You crawl into the Time Machine and are about to set the time gauge when you notice the energy booster which fuels the machine is low, only enough for one more trip. You decide to set the gauge back to your current present time at the lab. Within seconds of flashing lights and a quick rumble, the doors slide open and there, waiting anxiously, is the overseer.\n\n" +
@@ -633,7 +633,7 @@ story = {
                 text: "Start Over.",
                 next: "Start"
             }],
-        image: ["../images/k3.jpg"]
+        image: ["images/k3.jpg"]
     },
 
     k4: {
@@ -662,7 +662,7 @@ story = {
             "The Overseer looks at you with urgent eyes as the realization hits. 'If Richard goes through with this, the cure will be lost, altering countless lives.'\n\n" +
             "You glance at your watch and see that it is 5:54 pm. The future hangs in the balance, and there are only six minutes to act. The weight of the decision bears down on you.\n\n" +
             "You have two choices:\n",
-        image: ["../images/l1.jpg"],
+        image: ["images/l1.jpg"],
         choices: [{
                 text: "Head back to WWII minutes after you save Johnson and kill him",
                 next: "m1"
@@ -679,7 +679,7 @@ story = {
             "You nod your head in agreement as you set the timing gauge to Aug. 31, 1888, the day of the first murder. It would be nice to figure out the true story of what actually occurred that still to this day has gone unsolved.\n\n" +
             "\"The machine is ready!\" the overseer announces to several other researchers who had gathered in the research area. They take a step back as the doors slide closed.\n\n" +
             "You enter the key launch sequence. The machine spins as the lights flicker and flash, almost creating an untimely strobe light effect. The outside has an almost transparent quality. Within a couple of seconds, the machine no longer stands based in the research center lab room but now stands in a dark alley in Whitechapel's Buck's Row in London.",
-        image: ["../images/l2.jpg"],
+        image: ["images/l2.jpg"],
         choices: [{
             text: "Slide the machine over to a dark corner of the alley and begin the research",
             next: "m3"
@@ -691,7 +691,7 @@ story = {
             "You nod your head in agreement as you set the timing gauge to July 10th, 2030, ten days after the revolution of the states. What makes this assignment especially personal is that your great grandson, now 45 years old, has led one side of the revolution dividing the entire United States, the Eastern States from the Western States. Which side he is fighting for remains unclear.\n\n" +
             "\"The machine is ready!\" the overseer announces to several other researchers who had gathered in the research area. They take a step back as the doors slide closed.\n\n" +
             "You enter the key launch sequence. The machine spins as the lights flicker and flash almost to an untimely strobe light effect. The outside has an almost transparent appearance. Within a couple of seconds, the machine no longer stands in the research center lab room but now stands somewhere in the Western Middle of the Country of the US.",
-        image: ["../images/l2.jpg"],
+        image: ["images/l2.jpg"],
         choices: [{
             text: "Research 'The Great US Divide'",
             next: "m4"
@@ -732,7 +732,7 @@ story = {
             "You walk over to where Johnson is lying. Marines are laying wounded and killed as others take cover to not even notice you crawl over to him. You slip out your boot knife and whisper to him. \"I'm sorry, but this must be done. May God speed, and be with you.\"\n\n" +
 
             "You take the knife and stab him in a way he dies instantly. You crawl back to the time machine through the gunfire and explosions that impact around you until you finally make it back and get back in, a tear runs down the side of your face for the life you had just laid to rest.\n\n",
-        image: ["../images/m1.jpg"],
+        image: ["images/m1.jpg"],
         choices: [{
                 text: "Set a new date and get out of here.",
                 next: "n1"
@@ -752,7 +752,7 @@ story = {
                 text: "Start Over.",
                 next: "Start"
             }],
-        image: ["../images/m2.jpg"]
+        image: ["images/m2.jpg"]
     },
     m3: {
         text: "The doors slide open to the time machine. You set your watch to the current time displayed on the timing gauge. It's 4 AM Friday morning, Aug. 31, 1888, and the current location gauge shows a location of what appears to be Buck's Row. You sit up out of the time machine and slide it over to a dark corner that seems to have been overlooked and will be during your research here. You walk down the alley, which appears to be dark and deserted. It feels chilly and damp, not unusual for London even in the summer, especially before dawn.\n\n" +
@@ -768,7 +768,7 @@ story = {
                 next: "n4"
             }
         ],
-        image: ["../images/m3.jpg"]
+        image: ["images/m3.jpg"]
     },
     m4: {
         text: "When your head has stopped spinning, you cautiously untangle yourself and peer groggily outside. Your eyes widen at the sight that greets you.\n\n" +
@@ -825,7 +825,7 @@ story = {
                 text: "Start Over.",
                 next: "Start"
             }],
-        image: ["../images/n2.jpg"]
+        image: ["images/n2.jpg"]
     },
     n3: {
         text: "You decide to stay with the poor woman, not only may she be a clue in your research, but in your heart, you feel that if this was your own family, you would want someone to be with her too. You take some photos before noticing the man return with a policeman.\n\n" +
@@ -833,7 +833,7 @@ story = {
             "You take a couple of photos while backed into the shadows. You hear the policeman and the doctor trying to discover the identity of the body but finding none. You know from the history database onboard the machine she will later be identified as Mary Ann 'Polly' Nichols, age 42.\n\n" +
             "The murderer of Polly Nichols left nothing behind in the way of witnesses, weapon, or any other type of clue. None of the residents nearby heard any kind of disturbance, nor did any of the workmen in the area notice anything unusual.\n\n" +
             "Even though Polly had been found very shortly after her death, no vehicle or person was seen escaping the scene of the crime.",
-        image: ["../images/n3.jpg"],
+        image: ["images/n3.jpg"],
         choices: [{
                 text: "Maybe you should offer a clue as to where the investigation may lead",
                 next: "o1"
@@ -853,7 +853,7 @@ story = {
                 text: "Start Over.",
                 next: "Start"
             }],
-        image: ["../images/n4.jpg"]
+        image: ["images/n4.jpg"]
     },
 
     o1: {
@@ -879,7 +879,7 @@ story = {
                 next: "p2"
             }
         ],
-        image: ["../images/o2.jpg"]
+        image: ["images/o2.jpg"]
     },
     p1: {
         text: "No sense in wasting time. You log into the information you had found along with some photos you took at the scene, and download them into the computer to prevent any future loss of information.\n\n" +
@@ -900,7 +900,7 @@ story = {
             "The murderer of Polly Nichols left nothing behind in the way of witnesses, weapon, or any other type of clue. None of the residents nearby heard any kind of disturbance nor did any of the workmen in the area notice anything unusual.\n\n" +
             "You try cracking your brain looking for any answer which may come to mind as to why such hideous crimes were committed and the links from one murder to the other, or were they just a random spree of murder on prostitutes.\n\n" +
             "Seven days pass and you find yourself during the night on the streets of Whitechapel. Across the road, you notice several prostitutes and wonder if Annie may be among them.",
-        image: ["../images/p2.jpg"],
+        image: ["images/p2.jpg"],
         choices: [{
             text: "Look for Annie amongst the group of ladies",
             next: "q3"
@@ -917,7 +917,7 @@ story = {
             text: "Try another place and ask if she knows of 'Dark Annie'",
             next: "r1"
         }],
-        image: ["../images/q1.jpg"]
+        image: ["images/q1.jpg"]
     },
     q2: {
         text: "You walk into the lodge and up to the concierge at the desk. He introduces himself as Timothy Donovan. You advise him that you are a private investigator looking for information regarding the murder of Polly Nichols.\n\n" +
@@ -953,7 +953,7 @@ story = {
                 text: "Start Over.",
                 next: "Start"
             }],
-        image: ["../images/r1.jpg"]
+        image: ["images/r1.jpg"]
     },
     r2: {
         text: "You run out of the lodge, your trench coat billowing behind you as you dash toward the darkened alley.\n\n" +
@@ -961,7 +961,7 @@ story = {
             "You recognize him—it must be Jack the Ripper. Annie turns the corner, and you realize there is nothing you can do to stop what is about to happen.\n\n" +
             "You feel a sense of helplessness as you watch another innocent soul about to become a victim of this monstrous killer. You start to lose faith, torn between the desire to continue your research and the urge to return to the lab and report your findings.\n\n" +
             "You have 2 choices:",
-        image: ["../images/r2.jpg"],
+        image: ["images/r2.jpg"],
         choices: [{
                 text: "Proceed on with your research",
                 next: "s1"
@@ -1007,7 +1007,7 @@ story = {
             "As the murderer advances on the young woman, you find yourself debating what to do; you COULD save her. Surely rescuing this poor victim and seeing off the Ripper wouldn't change time that badly? Some more people might be alive, that's all.\n\n" +
             "But the Ripper is a lot fitter than you and deadly. If you do something, you'll need to use surprise.\n\n" +
             "Whatever you choose to do, you'll have to do it quickly!",
-        image: ["../images/t1.jpg"],
+        image: ["images/t1.jpg"],
         choices: [{
                 text: "Restrain yourself and wait to see if you can get a glimpse of the Ripper's face.",
                 next: "waiting"
@@ -1131,7 +1131,7 @@ story = {
             "You are beginning to hear the sounds of activity now - faint shouts and the stark clatter of gunfire. Not good activity then, but it's better than this seemingly-empty metropolis.\n\n" +
             "Suddenly, there is the unmistakable thwack of rotor blades, appearing out of nowhere and resounding off the sheer, glass walls around you. The helicopter is not in sight yet, but your instincts tell you it's probably not a good idea to be standing in a deserted street when it does.\n\n" +
             "You have a few moments to decide on the best place to lay low.",
-        image: ["../images/v2.jpg"],
+        image: ["images/v2.jpg"],
         choices: [{
                 text: "Clamber into the nearest car - a ruined old yellow taxi cab.",
                 next: "waiting"
